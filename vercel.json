@@ -1,6 +1,4 @@
 {
   "rootDirectory": "my_portfolio/my_portfolio_react",
-  "installCommand": "npm install",
-  "buildCommand": "npm run build",
   "outputDirectory": "build"
 }
