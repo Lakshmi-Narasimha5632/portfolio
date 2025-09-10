@@ -1,5 +1,15 @@
 {
   "rootDirectory": "my_portfolio/my_portfolio_react",
   "buildCommand": "npm run build",
-  "outputDirectory": "build"
+  "outputDirectory": "build",
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/"
+    },
+    {
+      "src": "/test",
+      "dest": "/"
+    }
+  ]
 }
