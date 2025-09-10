@@ -1,0 +1,82 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust for navbar height */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-intro {
+  font-size: 1.5em;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.hero-name {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.hero-tagline {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.hero-description {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.find-me-on {
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 1px;
+  border-radius: 1px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icon {
+  color: var(--primary-color);
+  font-size: 1.8em;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+  color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .hero-name {
+    font-size: 3em;
+  }
+
+  .hero-tagline {
+    font-size: 1.5em;
+  }
+}

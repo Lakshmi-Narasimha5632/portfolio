@@ -1,0 +1,301 @@
+.about-section {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.about-content h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.education-section-inline {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.education-section-inline h3 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  position: relative;
+  /* Text-shadow for better visibility on dark backgrounds, similar to image */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.education-section-inline h3::after {
+  content: '';
+  width: 80px; /* Wider accent line */
+  height: 4px;
+  background-color: var(--accent-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Allow 3-column layout, adjust min-width */
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.education-card-inline {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333333;
+}
+
+.education-card-inline:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.education-card-inline h4 {
+  font-size: 1.3em;
+  color: #333333;
+  margin-bottom: 5px; /* Adjusted margin */
+}
+
+.education-years {
+  font-size: 0.9em;
+  color: #666666;
+  margin: 0;
+}
+
+.education-grade {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.education-grade span {
+  color: var(--accent-color);
+}
+
+.education-card-inline ul {
+  list-style-type: disc;
+  padding-left: 18px;
+  margin-left: 0;
+  color: #555555;
+}
+
+.education-card-inline ul li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 0;
+}
+
+.education-card-inline ul li::before {
+  content: none; /* Remove custom bullet point */
+}
+
+.about-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.skill-set,
+.tools-used,
+.days-coded {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  flex: 1;
+  min-width: 280px;
+  max-width: 45%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-set:hover,
+.tools-used:hover,
+.days-coded:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.skill-set h3,
+.tools-used h3,
+.days-coded h3 {
+  font-size: 1.8em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.skill-set ul,
+.tools-used ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.skill-set ul li,
+.tools-used ul li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: var(--text-color);
+  position: relative;
+  padding-left: 25px;
+}
+
+.skill-set ul li::before,
+.tools-used ul li::before {
+  content: '✓'; /* Checkmark icon */
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.days-coded p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.skillset-title,
+.tools-title,
+.days-coded-title {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: var(--text-color); /* Default text color */
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.skillset-title .highlight,
+.tools-title .highlight,
+.days-coded-title .highlight {
+  color: var(--primary-color); /* Highlight color for 'SkillSet', 'Use', 'Code' */
+}
+
+.skills-grid,
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* 4 columns on large screens */
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.skill-item,
+.tool-item {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-item:hover,
+.tool-item:hover {
+  transform: translateY(-5px);
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item svg,
+.tool-item svg {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.skill-item:hover svg,
+.tool-item:hover svg {
+  color: white;
+}
+
+.coding-motto {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 30px;
+}
+
+/* Responsive adjustments for skills and tools grid */
+@media screen and (max-width: 768px) {
+  .skills-grid,
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust for smaller screens */
+    gap: 15px;
+  }
+
+  .skill-item,
+  .tool-item {
+    font-size: 1em;
+    padding: 15px 10px;
+  }
+
+  .skill-item svg,
+  .tool-item svg {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills-grid,
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+  }
+
+  .skill-item,
+  .tool-item {
+    font-size: 0.9em;
+    padding: 10px 8px;
+  }
+
+  .skill-item svg,
+  .tool-item svg {
+    font-size: 1.8em;
+  }
+}
