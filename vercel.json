@@ -2,6 +2,10 @@
   "rootDirectory": "my_portfolio/my_portfolio_react",
   "buildCommand": "npm run build",
   "outputDirectory": "build",
+  "installCommand": "npm install",
+  "framework": "react",
+  "nodeVersion": "20.x",
+  "frameworkVersion": "20.x",
   "routes": [
     {
       "src": "/",
